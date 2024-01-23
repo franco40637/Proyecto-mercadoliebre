@@ -18,6 +18,7 @@ app.get('/login.html', (req, res) => {
 app.post('/', (req, res) => {
     res.redirect('/');
 });
-app.listen(3003, () => {
-    console.log('Servidor funcionando en el puerto 3003');
+const port= process.env.PORT || 3003
+app.listen(port, () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
 });
