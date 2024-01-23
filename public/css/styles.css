@@ -196,19 +196,19 @@ main section article div.main-article h4.description {
     header .form .input {
         width: 120px;
         position: relative;
-        height: 30px; /* Ajusta la altura del rectángulo según sea necesario */
+        height: 30px; /* Ajusta la altura del rectángulo */
         background-color: #FFF; /* Fondo blanco */
         border: none; /* Sin bordes */
     bottom:48px;
     left:200px;
     }
     header .form input::placeholder {
-        font-size: 12px; /* Ajusta el tamaño del texto según sea necesario */
+        font-size: 12px; /* Ajusta el tamaño del texto */
     }
     header .form .submit {
         /* Hace que el rectángulo de búsqueda ocupe el espacio restante */
         width: auto;
-        height: 30px; /* Ajusta la altura de la lupa según sea necesario */
+        height: 30px; /* Ajusta la altura de la lupa  */
         background-color: #FFF; /* Fondo blanco */
         line-height: 30px; /* Centra verticalmente el contenido */
         border: none; /* Sin bordes */
@@ -400,10 +400,10 @@ footer {
 }
 
 .footer-item h4 {
-    margin-bottom: 10px; /* Agrega un margen inferior al título si es necesario */
+    margin-bottom: 10px; /* Agrega un margen inferior al título */
 }
 
 .footer-item p {
-    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    font-size: 14px; /* Ajusta el tamaño del texto  */
     line-height: 1.5; /* Ajusta la altura de línea del texto */
 }

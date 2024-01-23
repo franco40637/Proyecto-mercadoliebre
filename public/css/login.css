@@ -1,72 +1,33 @@
-/* Agrega estos estilos al final de tu archivo login.css */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+main {  /* DATO IMPORTANTE puse main a todo como main .log-form, main form,main label etc porque genereaba conflicto con styles.css al poner main se arreglo*/
+    width: 50%;
+    margin: 50px auto;
 }
 
-h2 {
-    font-size: 24px;
-    text-align: center;
-}
-
-.login-form {
-    width: 60%;
-    margin: 50px auto; /* Centra el formulario en la página */
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-form {
+main form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-label {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
+main input {
     padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* para ajustar el ancho de nombre y contraseña */
+    height: 40px; /* para ajustar la altura del rectangulo de nombre y contraseña */
 }
 
-button {
-    background-color: #EAC926;
+main button {
+    background-color: #007BFF;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 12px;
     border: none;
-    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* Estilos para dispositivos de hasta 480px (mobile) */
-@media screen and (max-width: 480px) {
-    .login-form {
-        width: 80%; /* Ajusta el ancho para dispositivos móviles */
-    }
-
-    form {
-        width: 100%;
-    }
-}
-
-/* Estilos para dispositivos de 768px a 991px (tablets) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .login-form {
-        width: 70%; /* Ajusta el ancho para tablets */
-    }
-}
-
-/* Estilos para dispositivos de 1200px en adelante (desktop) */
-@media screen and (min-width: 1200px) {
-    .login-form {
-        width: 50%; /* Ajusta el ancho para pantallas más grandes */
-    }
+main button:hover {
+    background-color: #0056b3;
 }
