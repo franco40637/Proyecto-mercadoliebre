@@ -1,67 +1,46 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
 .register-form {
-    width: 300px;
-    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 8px;
-    margin-top: 250px; /* Ajusta este valor según sea necesario */
-    margin-bottom: 0; /* Ajusta este valor según sea necesario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-field {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column; /* Añade este estilo para que los elementos internos se apilen verticalmente */
+    margin-bottom: 20px;
 }
 
-.form-field label {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 .form-field label.bold {
     font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.form-field input {
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="password"],
+.form-field input[type="date"],
+.form-field input[type="file"] {
     width: 100%;
-    padding: 8px;
-    font-size: 14px;
+    padding: 10px;
     box-sizing: border-box;
-}
-
-.radio-group {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.radio-group label {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.radio-group input {
-    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .checkbox-group {
-    margin-bottom: 15px;
-}
-
-.checkbox-group label {
-    display: block;
-    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .checkbox-group input {
@@ -69,28 +48,21 @@ body {
 }
 
 .button-group {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 50px;
 }
 
 .button-group button {
     padding: 10px 20px;
-    background-color: #0044AA;
+    background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-
-.button-group {
-    text-align: center;
-}
-
-.button-group button {
-    padding: 10px 20px;
-    background-color: #0044AA;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.button-group button[type="reset"] {
+    background-color: #f44336;
 }

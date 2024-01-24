@@ -148,7 +148,6 @@ main section article i.fa-truck {
     color: #39b54a;
     display: inline-block;
 }
-
 /* Ajustes adicionales para el ícono del camión de entrega dentro del círculo */
 main section article div.main-article i.fa-truck::before {
     font-size: 20px; /* Tamaño del ícono del camión de entrega */
@@ -351,11 +350,14 @@ main section article div.main-article h4.description {
         left: 450px;
     }
 
-    header div.top-header p {  /*para ajustar compra en cuota y sin tarjeta de credito*/
+    header div.top-header p {
+        width: 100%;
+        text-align: center;
         position: relative;
         top: -100px;
-        left: 400px;
+        left: 400; /* Adjust this value to move the text up or down */
     }
+    
 
     header nav {
         display: flex; /*para colocar horizontalmente los elementos secundarios como ofertas,ayuda,crea tu cuenta etc.*/
@@ -385,7 +387,6 @@ main section article div.main-article h4.description {
         display: none;
     }
 }
-/* Agrega estos estilos al final de tu archivo CSS */
 footer {
     display: flex;
     flex-direction: column;
@@ -406,4 +407,10 @@ footer {
 .footer-item p {
     font-size: 14px; /* Ajusta el tamaño del texto  */
     line-height: 1.5; /* Ajusta la altura de línea del texto */
+}
+.footer-item i {
+    color: blue; /* Cambia al color deseado para los iconos del pie de página  */
+}
+main section article div.main-article h4.description {
+    color: black; /* Cambia al color deseado para el texto de los productos */
 }
