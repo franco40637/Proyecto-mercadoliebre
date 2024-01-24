@@ -174,8 +174,8 @@ main section article div.main-article h4.description {
     header .burger-menu {
         display: block;
         position: relative;
-        top: 70px; /* bajar burger menu */
-        right:45% /* izquierda burger menu */
+        bottom: 10px; /*subir el burger menu*/
+        left:30% /* izquierda burger menu */
         
     }
     header {
@@ -206,26 +206,31 @@ main section article div.main-article h4.description {
     }
     header .form .submit {
         /* Hace que el rectángulo de búsqueda ocupe el espacio restante */
-        width: auto;
+        width: 18%;
         height: 30px; /* Ajusta la altura de la lupa  */
         background-color: #FFF; /* Fondo blanco */
         line-height: 30px; /* Centra verticalmente el contenido */
         border: none; /* Sin bordes */
         position: relative;
-    bottom:48px;
-    left:200px;
+    bottom:78px;
+    left:320px;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     }
     .top-header {
         height: 200px; /* O la altura que desees */
     }
      /* Estilo adicional para centrar el texto específico */
      header div.top-header p {
-        text-align: center; /* Centra el texto */
-        margin:0;
+        text-align: center;
+        margin: 0;
         position: relative;
-        left:50px;
-     }
-     
+        left: 50px;
+        top: -20px; /* Ajusta el valor negativo según sea necesario para subir el elemento */
+    }
 }
 /* Estilos para dispositivos de 768px a 991px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -256,25 +261,27 @@ main section article div.main-article h4.description {
     section.banner img {
         width: 100%; /* Asegura que la imagen del banner ocupe el ancho completo del contenedor */
         height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
+        position: relative;
+        bottom:50px;
     }
 
     header .form .input {
-        width: 30%;
+        width: 100%;
         position: relative;
         bottom: 40px;
         left: 200px;
     }
 
     header .form .submit {
-        width: 3%;
+        width: 10%;
         position: relative;
-        bottom: 40px;
-        left: 200px;
+        bottom: 60px;
+        left: 380px;
     }
 
     header div.top-header p {
         position: relative;
-        top: -62px;
+        top: -78px;
         left: 230px;
     }
 
@@ -291,7 +298,7 @@ main section article div.main-article h4.description {
     }
 
     header ul li {
-        margin-right: 35px;
+        margin-right:25px;
         position: relative;
         left: 15px;
     }
