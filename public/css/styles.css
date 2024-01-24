@@ -337,17 +337,17 @@ main section article div.main-article h4.description {
     }
 
     header .form .input {
-        width: 20%; /* Ajusta el ancho del campo de búsqueda */
+        width: 110%; /* Ajusta el ancho del campo de búsqueda */
         position: relative;
-        bottom: 75px;
+        bottom: 65px;
         left: 450px;
     }
 
     header .form .submit {
-        width: 3%; /* Ajusta el ancho del botón de búsqueda */
+        width: 10%; /* Ajusta el ancho del botón de búsqueda */
         position: relative;
-        bottom:75px;
-        left: 450px;
+        bottom:83px;
+        left: 648px;
     }
 
     header div.top-header p {
@@ -355,7 +355,7 @@ main section article div.main-article h4.description {
         text-align: center;
         position: relative;
         top: -100px;
-        left: 400; /* Adjust this value to move the text up or down */
+        left: 400; 
     }
     
 
@@ -380,7 +380,7 @@ main section article div.main-article h4.description {
     /* Ajustar altura y margen inferior del rectángulo anaranjado */
     div.top-header {
         position: relative;
-        margin-bottom: 5px;
+        margin-bottom: -30px;
     }
 
     div.burger-menu {

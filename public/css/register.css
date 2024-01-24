@@ -6,7 +6,7 @@ body {
 }
 
 .register-form {
-    max-width: 400px;
+    max-width: 430px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -20,8 +20,9 @@ body {
 
 .form-field label.bold {
     font-weight: bold;
-    display: block;
+    display:block;
     margin-bottom: 5px;
+    
 }
 
 .form-field input[type="text"],
@@ -41,10 +42,19 @@ body {
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column; /* Cambia la dirección del contenedor a columna para alinear verticalmente */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor (horizontal) */
+}
+.checkbox-group label {
+    margin-left: 10px; /* Ajusta el margen izquierdo  */
+    margin-bottom: 10px; /* Ajusta el margen inferior  */
+    position: relative; 
+    bottom: 15px;
+    left: 20px;
 }
 
 .checkbox-group input {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .button-group {
