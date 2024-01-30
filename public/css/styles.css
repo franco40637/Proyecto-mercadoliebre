@@ -231,6 +231,33 @@ main section article div.main-article h4.description {
         left: 50px;
         top: -20px; /* Ajusta el valor negativo según sea necesario para subir el elemento */
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black; /* Cambia esto al color de texto deseado para el pie de página */
+    }
+    
+    .footer-item {
+        width: 80%; /* Ajusta según sea necesario para el ancho deseado */
+        margin: 20px 0; /* Ajusta según sea necesario para el espacio entre los bloques de texto */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+    
+    .footer-item h4 {
+        margin-bottom: 10px; /* Agrega un margen inferior al título */
+    }
+    
+    .footer-item p {
+        font-size: 14px; /* Ajusta el tamaño del texto  */
+        line-height: 1.5; /* Ajusta la altura de línea del texto */
+    }
+    .footer-item i {
+        color: blue; /* Cambia al color deseado para los iconos del pie de página  */
+    }
+    main section article div.main-article h4.description {
+        color: black; /* Cambia al color deseado para el texto de los productos */
+    }
 }
 /* Estilos para dispositivos de 768px a 991px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -311,7 +338,33 @@ main section article div.main-article h4.description {
         display: none;
     }
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black; /* Cambia esto al color de texto deseado para el pie de página */
+}
 
+.footer-item {
+    width: 80%; /* Ajusta según sea necesario para el ancho deseado */
+    margin: 20px 0; /* Ajusta según sea necesario para el espacio entre los bloques de texto */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.footer-item h4 {
+    margin-bottom: 10px; /* Agrega un margen inferior al título */
+}
+
+.footer-item p {
+    font-size: 14px; /* Ajusta el tamaño del texto  */
+    line-height: 1.5; /* Ajusta la altura de línea del texto */
+}
+.footer-item i {
+    color: blue; /* Cambia al color deseado para los iconos del pie de página  */
+}
+main section article div.main-article h4.description {
+    color: black; /* Cambia al color deseado para el texto de los productos */
+}
 /* Estilos para dispositivos de 1200px en adelante (desktop) */
 @media screen and (min-width: 1200px) {
     main section.last-visit h3 {
@@ -393,31 +446,44 @@ main section article div.main-article h4.description {
     div.burger-menu {
         display: none;
     }
-}
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    color: black; /* Cambia esto al color de texto deseado para el pie de página */
+    color: black;
+    flex-direction: row;
+
 }
 
 .footer-item {
-    width: 80%; /* Ajusta según sea necesario para el ancho deseado */
-    margin: 20px 0; /* Ajusta según sea necesario para el espacio entre los bloques de texto */
+    width: auto; /* Cambiado a 'auto' para permitir que cada ítem tenga su propio ancho */
     text-align: center; /* Centra el contenido horizontalmente */
+   
 }
 
 .footer-item h4 {
     margin-bottom: 10px; /* Agrega un margen inferior al título */
 }
 
-.footer-item p {
-    font-size: 14px; /* Ajusta el tamaño del texto  */
-    line-height: 1.5; /* Ajusta la altura de línea del texto */
-}
 .footer-item i {
-    color: blue; /* Cambia al color deseado para los iconos del pie de página  */
+    color: blue; /* Cambiado a 'black' para que coincida con el color original */
+    
 }
+
+.footer-item:hover i {
+    color: green; /* Cambia al color deseado al pasar el mouse sobre los íconos */
+}
+
+#copyright {
+    width: 100%; /* Puedes ajustar esto según tus necesidades */
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    position: absolute;
+    left: 0; /* Coloca el elemento en el margen izquierdo */
+    bottom: -1000px; /* Ajusta según sea necesario para la posición vertical */
+}
+
+    
 main section article div.main-article h4.description {
     color: black; /* Cambia al color deseado para el texto de los productos */
 }
@@ -436,4 +502,5 @@ main section article:hover {
 main section article:hover i.fa-truck {
     transform: rotate(-90deg);
     transition: transform 0.3s ease-in-out;
+}
 }
